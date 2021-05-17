@@ -1,0 +1,71 @@
+.footer {
+	$self: &;
+	background-color: #000;
+	padding: 95px 0 120px;
+	font-family: "PNB", sans-serif;
+	font-size: 14px;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		transition: color 0.2s ease-in;
+
+		&:hover {
+			color: $cyan;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		
+		@include xxs-block() {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__navi {
+		margin-right: 190px;
+		
+		@include sm-block() {
+			margin-right: 40px;
+		}
+		
+		@include xxs-block() {
+			margin: 0 0 60px 0;
+			width: 100%;
+		}
+	}
+
+	&__navi-item {
+		display: block;
+		text-transform: uppercase;
+		white-space: nowrap;
+		
+		&:not(:last-child) {
+			margin-bottom: 35px;
+		}
+	}
+
+	&__side {
+		display: flex;
+		flex-flow: column nowrap;
+		
+		@include sm-block() {
+			margin-left: auto;
+		}
+		
+		@include xxs-block() {
+			margin: 0;
+			width: 100%;
+		}
+	}
+
+	&__side-link {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	&__socials {
+		margin-top: auto;
+	}
+}

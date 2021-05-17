@@ -1,0 +1,10 @@
+.title {
+	$self: &;
+	font-family: "PNSB", sans-serif;
+	font-size: 60px;
+	line-height: 1.1;
+	
+	@include md-block() {
+		font-size: 37px;
+	}
+}

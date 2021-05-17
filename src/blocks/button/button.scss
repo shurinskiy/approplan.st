@@ -1,0 +1,39 @@
+.button {
+	$self: &;
+	outline: none;
+	appearance: none;
+	background: none;
+	border: none;
+	display: block;
+	padding: 0;
+	text-decoration: none;
+	cursor: pointer;
+
+	font-family: "PNR", sans-serif;
+	letter-spacing: 0.15px;
+	font-size: 12px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 16px 30px 16px 45px;
+	background: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-blue') left 25px center / 8px 11px no-repeat #000;
+	transition: background-color 0.2s ease-in;
+	
+	&:hover {
+		font-family: "PNSB", sans-serif;
+		letter-spacing: normal;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-black') left 25px center / 8px 11px no-repeat $cyan;
+		color: #000;
+	}
+	
+	&_blue {
+		font-family: "PNSB", sans-serif;
+		color: #000;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-black') left 25px center / 8px 11px no-repeat $cyan;
+		
+		&:hover {
+			letter-spacing: 0.15px;
+			background: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-cyan') left 25px center / 8px 11px no-repeat #fff;
+		}
+	}
+}

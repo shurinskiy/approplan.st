@@ -1,0 +1,29 @@
+.contacts {
+	$self: &;
+	text-align: center;
+	margin-bottom: 50px;
+
+	&__title {
+		font-family: "PNSB", sans-serif;
+		font-size: 60px;
+		margin-bottom: 60px;
+	}
+	
+	&__info {
+		margin-bottom: 45px;
+
+		span, a {
+			display: block;
+			text-decoration: none;
+			color: inherit;
+			font-family: "PNSB", sans-serif;
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__socials {
+		justify-content: center;
+	}
+}

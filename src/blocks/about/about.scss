@@ -1,0 +1,151 @@
+.about {
+	$self: &;
+	margin-bottom: 200px;
+
+	@include xs-block() {
+		margin-bottom: 120px;
+	}
+
+	@include xxs-block() {
+		margin-bottom: 70px;
+	}
+
+	&__title {
+		font-size: 60px;
+		line-height: 1.1;
+		text-transform: uppercase;
+		font-family: "PNSB", sans-serif;
+		padding: 0 20px;
+		margin: 0 auto 70px;
+		text-align: center;
+		max-width: 600px;
+	}
+	
+	&__intro {
+		max-width: 730px;
+		margin: 0 auto 50px;
+		padding: 0 20px;
+		text-align: center;
+	}
+
+	&__advantages {
+		box-sizing: border-box;
+		background-color: $cyan;
+		padding: 50px 20px;
+		margin-bottom: 70px;
+	}
+	
+	&__advantages-items {
+		display: flex;
+		justify-content: center;
+		max-width: 1010px;
+		margin: 0 auto;
+
+		@include md-block() {
+			flex-wrap: wrap;
+			max-width: 600px;
+		}
+	}
+
+	&__advantages-item {
+		box-sizing: border-box;
+		width: 25%;
+		text-align: center;
+		padding: 0 10px;
+
+		> span {
+			display: block;
+
+			&:first-child {
+				font-family: "PNB", sans-serif;
+				font-size: 60px;
+				white-space: nowrap;
+				margin-bottom: 20px;
+			}
+
+			&:last-child {
+				font-family: "PNB", sans-serif;
+				font-size: 12px;
+				text-transform: uppercase;
+			}
+		}
+
+		@include md-block() {
+			width: 50%;
+			margin-bottom: 50px;
+		}
+
+		@include xs-block() {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+	}
+
+	&__strategy {
+		padding: 100px 20px 0 20px;
+		display: flex;
+		align-items: center;
+		max-width: 1110px;
+		margin: 0 auto;
+
+		@include xs-block() {
+			flex-wrap: wrap;
+		}
+
+		@include xxs-block() {
+			padding-top: 0;
+		}
+	}
+
+	&__strategy-image {
+		height: 500px;
+		
+		> img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		@include xs-block() {
+			height: 400px;
+			margin-right: 20px;
+		}
+
+		@include xxs-block() {
+			height: 300px;
+		}
+
+		@include xxxs-block() {
+			height: auto;
+		}
+	}
+
+	&__strategy-text {
+		box-sizing: border-box;
+		max-width: 360px;
+		padding: 40px 30px;
+		background-color: #000;
+		color: #fff;
+		margin: -20px 0 0 -80px;
+
+		h2 {
+			font-family: "PNB", sans-serif;
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		@include xs-block() {
+			margin: -20px 0 0 auto;
+		}
+
+		@include xxs-block() {
+			margin-left: 40px;
+			max-width: none;
+		}
+
+		@include xxxs-block() {
+			margin-left: 20px;
+			max-width: none;
+		}
+	}
+}
